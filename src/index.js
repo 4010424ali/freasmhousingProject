@@ -37,7 +37,7 @@ if (token) {
 
 ReactDOM.render(
   <>
-    <MessengerCustomerChat pageId="107853681123145" appId="385456932042021" />
+    <MessengerCustomerChat pageId="213594250543184" appId="385456932042021" />
     <BrowserRouter>
       <Switch>
         <Route exact path="/" component={App} />

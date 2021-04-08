@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import MessengerCustomerChat from 'react-messenger-customer-chat';
 import { Link } from 'react-router-dom';
 import logo from '../assets/img/logo.jpeg';
 
@@ -7,7 +6,6 @@ export default function Navbar(props) {
   const [navbarOpen, setNavbarOpen] = useState(false);
   return (
     <>
-      <MessengerCustomerChat pageId="107853681123145" appId="385456932042021" />
       <nav
         className={
           (props.transparent

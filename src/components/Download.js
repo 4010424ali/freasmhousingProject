@@ -34,7 +34,10 @@ const Download = () => {
             View & Download PDF
           </h2>
           {pdf.map((item) => (
-            <div className="flex flex-wrap justify-center items-center mt-5 px-20">
+            <div
+              key={item._id}
+              className="flex flex-wrap justify-center items-center mt-5 px-20"
+            >
               <div className="w-full md:w-5/12 px-4 ">
                 <h1 className="text-2xl">{item.name}</h1>
                 <p>
@@ -48,7 +51,7 @@ const Download = () => {
                   href={`https://rocky-lowlands-50976.herokuapp.com/pdf/${item.pdf}`}
                   target={'_blank'}
                   rel="noreferrer"
-                  class="rounded px-3 py-2 m-1 border-b-4 border-l-2 shadow-lg"
+                  className="rounded px-3 py-2 m-1 border-b-4 border-l-2 shadow-lg"
                   style={{ backgroundColor: '#d1ac6d' }}
                 >
                   View & Download PDF

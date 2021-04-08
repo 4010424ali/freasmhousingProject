@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import jwtDecode from 'jwt-decode';
 import axios from 'axios';
+import MessengerCustomerChat from 'react-messenger-customer-chat';
 
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import App from './App';
@@ -13,6 +14,7 @@ import Dashboard from './admin/Dashboard';
 import UploadImage from './admin/UploadPhoto';
 import UploadDocuments from './admin/UploadDocuments';
 import Download from './components/Download';
+import Contact from './components/Contact';
 import reportWebVitals from './reportWebVitals';
 
 const token = localStorage.token;
@@ -34,31 +36,34 @@ if (token) {
 }
 
 ReactDOM.render(
-  <BrowserRouter>
-    <Switch>
-      <Route exact path="/" component={App} />
-      <Route exact path="/gellery" component={Gellery} />
-      <Route exact path="/about" component={About} />
-      <Route exact path="/downloadPDF" component={Download} />
-      <Route exact path="/login" component={Login} />
-      <Route
-        exact
-        path="/dashboard"
-        component={authenticated ? Dashboard : Login}
-      />
-      <Route
-        exact
-        path="/uploadphoto"
-        component={authenticated ? UploadImage : Login}
-      />
-      <Route
-        exact
-        path="/uploadpdf"
-        component={authenticated ? UploadDocuments : Login}
-      />
-    </Switch>
-  </BrowserRouter>,
-
+  <>
+    <MessengerCustomerChat pageId="107853681123145" appId="385456932042021" />
+    <BrowserRouter>
+      <Switch>
+        <Route exact path="/" component={App} />
+        <Route exact path="/gellery" component={Gellery} />
+        <Route exact path="/about" component={About} />
+        <Route exact path="/downloadPDF" component={Download} />
+        <Route exact path="/contact" component={Contact} />
+        <Route exact path="/login" component={Login} />
+        <Route
+          exact
+          path="/dashboard"
+          component={authenticated ? Dashboard : Login}
+        />
+        <Route
+          exact
+          path="/uploadphoto"
+          component={authenticated ? UploadImage : Login}
+        />
+        <Route
+          exact
+          path="/uploadpdf"
+          component={authenticated ? UploadDocuments : Login}
+        />
+      </Switch>
+    </BrowserRouter>
+  </>,
   document.getElementById('root')
 );
 

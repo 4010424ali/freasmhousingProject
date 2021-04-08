@@ -9547,6 +9547,13 @@ react-mapbox-gl@^5.1.1:
     deep-equal "1.0.1"
     supercluster "^7.0.0"
 
+react-messenger-customer-chat@^0.8.0:
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/react-messenger-customer-chat/-/react-messenger-customer-chat-0.8.0.tgz#c0696af9f71d5804a1b1149ae67d672802dee15d"
+  integrity sha512-7HItF+2nElXCBLi1q5eccgE9X4P86BmjmzF5nBcok+hJNWVjdKJTdWxl9VZTQnjkp3GHB7WwTwN2l3d/RKmFuQ==
+  dependencies:
+    prop-types "^15.6.0"
+
 react-player@^2.9.0:
   version "2.9.0"
   resolved "https://registry.yarnpkg.com/react-player/-/react-player-2.9.0.tgz#ef7fe7073434087565f00ff219824e1e02c4b046"

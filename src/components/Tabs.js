@@ -120,10 +120,7 @@ const Tabs = ({ color }) => {
                         className="object-cover"
                       />
                     </div>
-                    <div
-                      className="w-full md:w-full lg:w-1/4 text-white"
-                      style={{ background: '#d1ac6d' }}
-                    >
+                    <div className="w-full md:w-full lg:w-1/4 text-white bg-gray-900">
                       <ul
                         className="inline-block align-middle text-sm px-10 py-20"
                         style={{ listStyle: 'outside' }}
@@ -161,10 +158,7 @@ const Tabs = ({ color }) => {
                         className="object-cover"
                       />
                     </div>
-                    <div
-                      className="w-full md:w-full lg:w-1/4 text-white"
-                      style={{ background: '#d1ac6d' }}
-                    >
+                    <div className="w-full md:w-full lg:w-1/4 text-white bg-gray-900">
                       <ul
                         className="inline-block align-middle text-sm px-10 py-20"
                         style={{ listStyle: 'outside' }}
@@ -202,14 +196,8 @@ const Tabs = ({ color }) => {
                         className="object-cover"
                       />
                     </div>
-                    <div
-                      className="w-full md:w-full lg:w-1/4 text-white"
-                      style={{ background: '#d1ac6d' }}
-                    >
-                      <ul
-                        className="inline-block align-middle text-sm px-10 py-20"
-                        style={{ listStyle: 'outside' }}
-                      >
+                    <div className="w-full md:w-full lg:w-1/4 text-white bg-gray-900">
+                      <ul className="inline-block align-middle text-sm px-10 py-20 bg-gray-900">
                         <li>Government Approved (LDA, LESCO, WASA)</li>
                         <li>Gated community</li>
                         <li>Quality Development</li>
@@ -244,10 +232,7 @@ const Tabs = ({ color }) => {
                         className="object-cover"
                       />
                     </div>
-                    <div
-                      className="w-full md:w-full lg:w-1/4 text-white"
-                      style={{ background: '#d1ac6d' }}
-                    >
+                    <div className="w-full md:w-full lg:w-1/4 text-white bg-gray-900">
                       <ul
                         className="inline-block align-middle text-sm px-10 py-20"
                         style={{ listStyle: 'outside' }}
@@ -286,10 +271,7 @@ const Tabs = ({ color }) => {
                         className="object-cover"
                       />
                     </div>
-                    <div
-                      className="w-full md:w-full lg:w-1/4 text-white"
-                      style={{ background: '#d1ac6d' }}
-                    >
+                    <div className="w-full md:w-full lg:w-1/4 text-white bg-gray-900">
                       <ul
                         className="inline-block align-middle text-sm px-10 py-20"
                         style={{ listStyle: 'outside' }}

@@ -14,6 +14,11 @@ import team3 from './assets/img/team-3-800x800.jpg';
 import team4 from './assets/img/team-4-470x470.png';
 import video from './assets/video/video.mp4';
 import aboutus from './assets/img/aboutus.jpg';
+import house1 from './assets/img/home1.JPG';
+import house2 from './assets/img/home2.JPG';
+import house3 from './assets/img/home3.JPG';
+import location from './assets/img/location.jpeg';
+import place from './assets/img/place.PNG';
 
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -44,19 +49,17 @@ function App() {
                   id="blackOverlay"
                   className="w-full h-full opacity-50 bg-black"
                 >
-                  <div className="container w-full lg:w-6/12 px-4 ml-auto mr-auto text-center pt-32">
+                  <div className="container w-full lg:w-6/12 px-4 ml-auto mr-auto text-center pt-48">
                     <h1 className="text-white font-semibold text-5xl md:mb-4 sm:mb-0">
-                      Welcome To Dream House
+                      Welcome To Dream House Society
                     </h1>
-                    <p className="text-white md:leading-7 sm:leading-normal">
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Repellendus dolores excepturi nemo? In blanditiis
-                      asperiores fuga, tempora voluptas similique possimus quis
-                      ad, dignissimos, quam dolorem natus! Esse debitis tempora
-                      obcaecati quia nam aliquam eligendi, necessitatibus
-                      tenetur inventore excepturi rerum. Soluta molestias culpa
-                      non, magni aliquam repellendus autem perspiciatis iste.
-                      Rem.
+                    <p
+                      className="md:leading-7 text-3xl sm:leading-normal uppercase"
+                      style={{
+                        color: '#d1ac6d',
+                      }}
+                    >
+                      where dreams come true
                     </p>
                   </div>
                 </div>
@@ -73,20 +76,10 @@ function App() {
                   id="blackOverlay"
                   className="w-full h-full opacity-50 bg-black"
                 >
-                  <div className="container w-full lg:w-6/12 px-4 ml-auto mr-auto text-center pt-32">
+                  <div className="container w-full lg:w-6/12 px-4 ml-auto mr-auto text-center pt-48">
                     <h1 className="text-white font-semibold text-5xl md:mb-4 sm:mb-0">
                       Make Your Dream
                     </h1>
-                    <p className="text-white md:leading-7 sm:leading-normal">
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Repellendus dolores excepturi nemo? In blanditiis
-                      asperiores fuga, tempora voluptas similique possimus quis
-                      ad, dignissimos, quam dolorem natus! Esse debitis tempora
-                      obcaecati quia nam aliquam eligendi, necessitatibus
-                      tenetur inventore excepturi rerum. Soluta molestias culpa
-                      non, magni aliquam repellendus autem perspiciatis iste.
-                      Rem.
-                    </p>
                   </div>
                 </div>
               </div>
@@ -102,20 +95,10 @@ function App() {
                   id="blackOverlay"
                   className="w-full h-full opacity-50 bg-black"
                 >
-                  <div className="container w-full lg:w-6/12 px-4 ml-auto mr-auto text-center pt-32">
+                  <div className="container w-full lg:w-6/12 px-4 ml-auto mr-auto text-center pt-48">
                     <h1 className="text-white font-semibold text-5xl md:mb-4 sm:mb-0">
                       Dream Comes true
                     </h1>
-                    <p className="text-white md:leading-7 sm:leading-normal">
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Repellendus dolores excepturi nemo? In blanditiis
-                      asperiores fuga, tempora voluptas similique possimus quis
-                      ad, dignissimos, quam dolorem natus! Esse debitis tempora
-                      obcaecati quia nam aliquam eligendi, necessitatibus
-                      tenetur inventore excepturi rerum. Soluta molestias culpa
-                      non, magni aliquam repellendus autem perspiciatis iste.
-                      Rem.
-                    </p>
                   </div>
                 </div>
               </div>
@@ -134,20 +117,23 @@ function App() {
                   Dream Housing
                 </h3>
                 <p className="text-lg font-bold leading-relaxed mt-4 mb-4 text-gray-700">
-                  Dream Housing (PVT) Ltd consists of highly motivated, well
-                  qualified, and experienced professionals, who are all the time
-                  bringing world class support and services to our clients. The
-                  project is designed as a fully secured gated community with
-                  luxurious living and exclusive life style providing equal
-                  opportunities to all classes of the society.
+                  Dream Housing (Pvt) Ltd offers a Promising future giving new
+                  Dimensions to Real Estate with Luxury Living and Trending Life
+                  Style. We suggest most preferred Destination for not only
+                  Pakistanis butt also overseas investors.
                 </p>
                 <p className="text-lg font-bold leading-relaxed mt-0 mb-4 text-gray-700">
-                  We are here to add a highly sophisticated dynamic fellowship
-                  and are committed to change the concept of luxury in to a
-                  comfortable life style.
+                  I am greatly thankful to all our esteem clients / investors
+                  for trusting us and ensure you our commitment to cater for all
+                  socioeconomic classes of the society with equal opportunities.
+                </p>
+                <p className="text-lg font-bold leading-relaxed mt-0 mb-4 text-gray-700">
+                  We aim at providing best choice locations with world-class
+                  amenities guarantying highest standards, well in time delivery
+                  meeting by our promises, thus resulting in life time
+                  satisfaction.
                 </p>
               </div>
-
               <div className="w-full md:w-4/12 px-4 mr-auto pt-20">
                 <div
                   className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg"
@@ -191,19 +177,23 @@ function App() {
         </section>
 
         <section className="py-20 bg-gray-200 ">
-          <h2 className="text-5xl font-bold text-center pb-10">Facilities</h2>
+          <h2 className="text-5xl font-bold text-center pb-10">
+            Our Facilities
+          </h2>
           <Tabs color="gray" />
         </section>
 
         <section>
           <div className="antialiased bg-gray-200 text-gray-900 font-sans p-6">
             <div className="container mx-auto">
-              <h2 className="text-5xl font-bold text-center pb-10">Houses</h2>
+              <h2 className="text-5xl font-bold text-center pb-10">
+                Dream Housing Villa
+              </h2>
               <div className="line"></div>
               <div className="housing">
-                <House />
-                <House />
-                <House />
+                <House image={house1} />
+                <House image={house2} />
+                <House image={house3} />
               </div>
             </div>
           </div>
@@ -229,11 +219,6 @@ function App() {
             <div className="flex flex-wrap justify-center text-center mb-24">
               <div className="w-full lg:w-6/12 px-4">
                 <h2 className="text-4xl font-semibold">Authorized Dealer</h2>
-                <p className="text-lg leading-relaxed m-4 text-gray-600">
-                  According to the National Oceanic and Atmospheric
-                  Administration, Ted, Scambos, NSIDClead scentist, puts the
-                  potentially record maximum.
-                </p>
               </div>
             </div>
             <div className="flex flex-wrap">
@@ -246,30 +231,7 @@ function App() {
                     style={{ maxWidth: '120px' }}
                   />
                   <div className="pt-6 text-center">
-                    <h5 className="text-xl font-bold">Ryan Tompson</h5>
-                    <p className="mt-1 text-sm text-gray-500 uppercase font-semibold">
-                      Best Dealer
-                    </p>
-                    <div className="mt-6">
-                      <button
-                        className="bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-twitter"></i>
-                      </button>
-                      <button
-                        className="bg-blue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-facebook-f"></i>
-                      </button>
-                      <button
-                        className="bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-dribbble"></i>
-                      </button>
-                    </div>
+                    <h5 className="text-xl font-bold">Dealer 1</h5>
                   </div>
                 </div>
               </div>
@@ -282,24 +244,7 @@ function App() {
                     style={{ maxWidth: '120px' }}
                   />
                   <div className="pt-6 text-center">
-                    <h5 className="text-xl font-bold">Romina Hadid</h5>
-                    <p className="mt-1 text-sm text-gray-500 uppercase font-semibold">
-                      Marketing Specialist
-                    </p>
-                    <div className="mt-6">
-                      <button
-                        className="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-google"></i>
-                      </button>
-                      <button
-                        className="bg-blue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-facebook-f"></i>
-                      </button>
-                    </div>
+                    <h5 className="text-xl font-bold">Dealer 2</h5>
                   </div>
                 </div>
               </div>
@@ -312,30 +257,7 @@ function App() {
                     style={{ maxWidth: '120px' }}
                   />
                   <div className="pt-6 text-center">
-                    <h5 className="text-xl font-bold">Alexa Smith</h5>
-                    <p className="mt-1 text-sm text-gray-500 uppercase font-semibold">
-                      Authorized Dealer
-                    </p>
-                    <div className="mt-6">
-                      <button
-                        className="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-google"></i>
-                      </button>
-                      <button
-                        className="bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-twitter"></i>
-                      </button>
-                      <button
-                        className="bg-gray-800 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-instagram"></i>
-                      </button>
-                    </div>
+                    <h5 className="text-xl font-bold">Dealer 3</h5>
                   </div>
                 </div>
               </div>
@@ -348,36 +270,7 @@ function App() {
                     style={{ maxWidth: '120px' }}
                   />
                   <div className="pt-6 text-center">
-                    <h5 className="text-xl font-bold">Jenna Kardi</h5>
-                    <p className="mt-1 text-sm text-gray-500 uppercase font-semibold">
-                      Founder and CEO
-                    </p>
-                    <div className="mt-6">
-                      <button
-                        className="bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-dribbble"></i>
-                      </button>
-                      <button
-                        className="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-google"></i>
-                      </button>
-                      <button
-                        className="bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-twitter"></i>
-                      </button>
-                      <button
-                        className="bg-gray-800 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-instagram"></i>
-                      </button>
-                    </div>
+                    <h5 className="text-xl font-bold">Dealer 4</h5>
                   </div>
                 </div>
               </div>
@@ -385,7 +278,10 @@ function App() {
           </div>
         </section>
 
-        <section className="relative py-20 bg-gray-900 text-white">
+        <section
+          className="relative py-20 text-white"
+          style={{ backgroundColor: '#d1ac6d' }}
+        >
           <div
             className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
             style={{ height: '80px', transform: 'translateZ(0)' }}
@@ -423,8 +319,7 @@ function App() {
                       For Booking Contact us
                     </h4>
                     <p className="leading-relaxed font-bold mt-1 mb-4 text-gray-600">
-                      Complete this form and we will get back to you in 24
-                      hours.
+                      Complete this form and we will get back to you soon
                     </p>
                     <div className="relative w-full mb-3 mt-8">
                       <label
@@ -481,6 +376,33 @@ function App() {
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="relative py-20 text-white bg-black">
+          <div className=" px-4">
+            <h2 className="text-5xl font-bold text-center pb-10">Location</h2>
+            <div className="items-center flex flex-wrap">
+              <div className="w-full md:w-4/12 ml-auto mr-auto px-4 mb-5">
+                <a
+                  href="https://www.google.com/maps/place/31%C2%B019'57.1%22N+74%C2%B013'56.1%22E/@31.3315909,74.2331606,17z/data=!4m5!3m4!1s0x0:0x0!8m2!3d31.3325348!4d74.2322487?hl=en"
+                  // eslint-disable-next-line
+                >
+                  <img
+                    alt="..."
+                    className="max-w-full h-auto rounded-lg shadow-lg "
+                    src={place}
+                  />
+                </a>
+              </div>
+              <div className="w-full md:w-4/12 ml-auto mr-auto px-4 mb-5">
+                <img
+                  alt="..."
+                  className="max-w-full h-auto rounded-lg shadow-lg "
+                  src={location}
+                />
               </div>
             </div>
           </div>

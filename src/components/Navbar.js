@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import MessengerCustomerChat from 'react-messenger-customer-chat';
 import { Link } from 'react-router-dom';
 import logo from '../assets/img/logo.jpeg';
 
@@ -6,6 +7,7 @@ export default function Navbar(props) {
   const [navbarOpen, setNavbarOpen] = useState(false);
   return (
     <>
+      <MessengerCustomerChat pageId="107853681123145" appId="385456932042021" />
       <nav
         className={
           (props.transparent
@@ -24,7 +26,7 @@ export default function Navbar(props) {
               }
               to="/"
             >
-              <img src={logo} width="40" height="40" alt="" />
+              <img src={logo} width="60" height="60" alt="" />
             </Link>
             <button
               className="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
@@ -109,6 +111,27 @@ export default function Navbar(props) {
                     }
                   />{' '}
                   Gallery
+                </Link>
+              </li>
+              <li className="flex items-center">
+                <Link
+                  className={
+                    (props.transparent
+                      ? 'lg:text-white lg:hover:text-gray-300 text-gray-800'
+                      : 'text-gray-800 hover:text-gray-600') +
+                    ' px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold'
+                  }
+                  to="/contact"
+                >
+                  <i
+                    className={
+                      (props.transparent
+                        ? 'lg:text-gray-300 text-gray-500'
+                        : 'text-gray-500') +
+                      ' fas fa-phone-square-alt text-lg leading-lg mr-2'
+                    }
+                  />{' '}
+                  Contact
                 </Link>
               </li>
             </ul>

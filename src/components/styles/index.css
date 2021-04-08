@@ -1,0 +1,106 @@
+.section-heading {
+  font-size: 4.5rem;
+  line-height: 1;
+  text-align: center;
+  padding: 0 0 4rem 0;
+  font-weight: bold;
+}
+
+.tabs {
+  display: flex;
+  height: 600px;
+}
+
+.tabs img {
+  flex: 2;
+  /* max-width: 100%; */
+  height: auto;
+}
+
+.tabs .description {
+  flex: 1;
+  background: #d1ac6d;
+  color: #fff;
+}
+
+.tabs ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+  padding: 0 30px;
+  color: black;
+  list-style: circle;
+}
+
+.tabs ul li {
+  font-size: 15px;
+  text-align: left;
+  font-weight: bold;
+}
+
+#tabs-two {
+  display: flex;
+  height: 600px;
+}
+
+#tabs-two img {
+  max-width: 100%;
+  height: auto;
+}
+
+#tabs-two .description {
+  background: #d1ac6d;
+  color: #fff;
+}
+
+#tabs-two ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+  padding: 0 30px;
+  color: black;
+  list-style: circle;
+}
+
+#tabs-two ul li {
+  font-size: 15px;
+  text-align: left;
+  font-weight: bold;
+}
+
+/* House Section */
+
+@media (max-width: 1414px) {
+  #tabs-two {
+    display: block;
+    width: 100%;
+  }
+
+  #tabs-two .description {
+    padding: 2rem 0;
+  }
+}
+
+/* Housing */
+.housing {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+@media (max-width: 750px) {
+  .housing {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Gellery */
+.gellery-footer {
+  position: relative;
+  bottom: 0;
+  right: 0;
+}

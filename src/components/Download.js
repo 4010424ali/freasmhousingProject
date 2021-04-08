@@ -4,7 +4,6 @@ import dayjs from 'dayjs';
 import relativeTime from 'dayjs/plugin/relativeTime';
 
 import Navbar from './Navbar';
-import Footer from './Footer';
 
 const Download = () => {
   const [pdf, setPdf] = useState([]);
@@ -48,6 +47,7 @@ const Download = () => {
                 <a
                   href={`https://rocky-lowlands-50976.herokuapp.com/pdf/${item.pdf}`}
                   target={'_blank'}
+                  rel="noreferrer"
                   class="rounded px-3 py-2 m-1 border-b-4 border-l-2 shadow-lg"
                   style={{ backgroundColor: '#d1ac6d' }}
                 >

@@ -4,10 +4,6 @@ import 'mapbox-gl/dist/mapbox-gl.css';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import AboutUs from '../assets/img/aboutus.jpg';
-import team1 from '../assets/img/team-1-800x800.jpg';
-import team2 from '../assets/img/team-2-800x800.jpg';
-import team3 from '../assets/img/team-3-800x800.jpg';
-import team4 from '../assets/img/team-4-470x470.png';
 
 const About = () => {
   const Map = ReactMapboxGl({

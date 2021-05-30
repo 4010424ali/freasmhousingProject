@@ -151,7 +151,7 @@ const UploadPhoto = () => {
                 <div className="md:w-1/3 px-4 mb-8 relative">
                   <img
                     className="rounded shadow-md"
-                    src={`https://rocky-lowlands-50976.herokuapp.com/uploads/${img.image}`}
+                    src={`${img.image}`}
                     alt=""
                   />
                   <div

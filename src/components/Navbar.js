@@ -177,7 +177,9 @@ export default function Navbar(props) {
                       : 'text-gray-800 hover:text-gray-600') +
                     ' px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold'
                   }
-                  href="#pablo"
+                  href="https://www.facebook.com/DreamHousingPrivateLimited"
+                  target="_blank"
+                  rel="noreferrer"
                 >
                   <i
                     className={
@@ -221,7 +223,9 @@ export default function Navbar(props) {
                       : 'text-gray-800 hover:text-gray-600') +
                     ' px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold'
                   }
-                  href="#pablo"
+                  href="https://www.youtube.com/channel/UCVzg9w-NJqUrID5lSwOB_ew"
+                  target="_blank"
+                  rel="noreferrer"
                 >
                   <i
                     className={

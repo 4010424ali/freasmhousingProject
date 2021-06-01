@@ -45,7 +45,6 @@ export default function Navbar(props) {
               (navbarOpen ? ' block rounded shadow-lg' : ' hidden')
             }
             id="example-navbar-warning"
-            style={{ background: '#d1ac6d' }}
           >
             <ul className="flex flex-col lg:flex-row list-none mr-auto">
               <li className="flex items-center">
@@ -132,9 +131,30 @@ export default function Navbar(props) {
                   Contact
                 </Link>
               </li>
+              <li className="flex items-center">
+                <Link
+                  className={
+                    (props.transparent
+                      ? 'lg:text-white lg:hover:text-gray-300 text-gray-800'
+                      : 'text-gray-800 hover:text-gray-600') +
+                    ' px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold'
+                  }
+                  to="/login"
+                >
+                  <i
+                    className={
+                      (props.transparent
+                        ? 'lg:text-gray-300 text-gray-500'
+                        : 'text-gray-500') +
+                      ' fas fa-lock text-lg leading-lg mr-2'
+                    }
+                  />{' '}
+                  login
+                </Link>
+              </li>
             </ul>
             <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
-               <li className="flex items-center">
+              <li className="flex items-center">
                 <Link
                   className={
                     (props.transparent
@@ -214,8 +234,6 @@ export default function Navbar(props) {
                   <span className="lg:hidden inline-block ml-2">Tweet</span>
                 </a>
               </li>
-
-           
             </ul>
           </div>
         </div>

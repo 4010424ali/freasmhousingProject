@@ -1,5 +1,11 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import {
+  withScriptjs,
+  withGoogleMap,
+  GoogleMap,
+  Marker,
+} from 'react-google-maps';
 import Loader from 'react-loader-spinner';
 import { Slide } from 'react-slideshow-image';
 import ReactPlayer from 'react-player/youtube';
@@ -16,8 +22,6 @@ import image2 from './assets/img/slide_2.jpg';
 import image3 from './assets/img/slide_3.jpg';
 import image4 from './assets/img/slide_4.jpg';
 import aboutus from './assets/img/aboutus.jpg';
-import location from './assets/img/location.jpeg';
-import place from './assets/img/place.PNG';
 
 import aut_1 from './assets/img/img_asha.jpg';
 import aut_2 from './assets/img/img_jouf.jpg';
@@ -65,6 +69,28 @@ const responsive = {
   },
 };
 
+const MapWithAMarker = withScriptjs(
+  withGoogleMap((props) => (
+    <GoogleMap
+      defaultZoom={9}
+      defaultCenter={{ lat: 31.345369, lng: 74.241225 }}
+    >
+      <Marker position={{ lat: 31.345369, lng: 74.241225 }} />
+    </GoogleMap>
+  ))
+);
+
+const MainOffices = withScriptjs(
+  withGoogleMap((props) => (
+    <GoogleMap
+      defaultZoom={9}
+      defaultCenter={{ lat: 31.4432589, lng: 74.2652773 }}
+    >
+      <Marker position={{ lat: 31.4432589, lng: 74.2652773 }} />
+    </GoogleMap>
+  ))
+);
+
 function App() {
   const [images, setImage] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -109,11 +135,11 @@ function App() {
         </div>
       ) : (
         <>
-          <Navbar transparent />
+          <Navbar />
           <main>
             <div
-              className="slide-container relative pt-16 pb-32"
-              style={{ height: '75vh' }}
+              className="slide-container relative"
+              style={{ height: '73vh' }}
             >
               <Slide arrows={false}>
                 <div className="each-slide">
@@ -260,7 +286,7 @@ function App() {
               <h2 className="text-5xl font-bold text-center pb-10">
                 Our Facilities
               </h2>
-              <Tabs color="gray" />
+              <Tabs color="black" />
             </section>
 
             <section>
@@ -297,9 +323,7 @@ function App() {
                 height={'600px'}
               />
             </section>
-            {/* <h2 className="text-4xl font-semibold">
-                      Authorized Dealer
-                    </h2> */}
+
             <section className="pt-20 pb-20">
               <h2 className="text-5xl font-bold text-center pb-10">
                 Authorized Dealer
@@ -442,111 +466,6 @@ function App() {
               </Carousel>
             </section>
 
-            <section
-              className="relative py-20 text-white"
-              style={{ backgroundColor: '#d1ac6d' }}
-            >
-              <div
-                className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
-                style={{ height: '80px', transform: 'translateZ(0)' }}
-              >
-                <svg
-                  className="absolute bottom-0 overflow-hidden"
-                  xmlns="http://www.w3.org/2000/svg"
-                  preserveAspectRatio="none"
-                  version="1.1"
-                  viewBox="0 0 2560 100"
-                  x="0"
-                  y="0"
-                >
-                  <polygon
-                    className="text-white fill-current"
-                    points="2560 0 2560 100 0 100"
-                  ></polygon>
-                </svg>
-              </div>
-
-              <div className=" px-4">
-                <h2 className="text-5xl font-bold text-center pb-10">
-                  Book Now
-                </h2>
-                <div className="items-center flex flex-wrap">
-                  <div className="w-full md:w-4/12 ml-auto mr-auto px-4 mb-5">
-                    <img
-                      alt="..."
-                      className="max-w-full h-auto rounded-lg shadow-lg "
-                      src="https://parkavenue.com.pk/wp-content/uploads/2019/09/23213099_878153629020847_5309844393303557310_o.jpg?id=1608"
-                    />
-                  </div>
-                  <div className="w-full md:w-5/12 ml-auto mr-auto px-4">
-                    <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gray-300">
-                      <div className="flex-auto p-5 lg:p-10">
-                        <h4 className="text-2xl font-bold text-gray-900">
-                          For Booking Contact us
-                        </h4>
-                        <p className="leading-relaxed font-bold mt-1 mb-4 text-gray-600">
-                          Complete this form and we will get back to you soon
-                        </p>
-                        <div className="relative w-full mb-3 mt-8">
-                          <label
-                            className="block uppercase text-gray-700 text-xs font-bold mb-2"
-                            htmlFor="full-name"
-                          >
-                            Full Name
-                          </label>
-                          <input
-                            type="text"
-                            className="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
-                            placeholder="Full Name"
-                            style={{ transition: 'all .15s ease' }}
-                          />
-                        </div>
-
-                        <div className="relative w-full mb-3">
-                          <label
-                            className="block uppercase text-gray-700 text-xs font-bold mb-2"
-                            htmlFor="email"
-                          >
-                            Phone
-                          </label>
-                          <input
-                            type="number"
-                            className="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
-                            placeholder="Number"
-                            style={{ transition: 'all .15s ease' }}
-                          />
-                        </div>
-
-                        <div className="relative w-full mb-3">
-                          <label
-                            className="block uppercase text-gray-700 text-xs font-bold mb-2"
-                            htmlFor="message"
-                          >
-                            Message
-                          </label>
-                          <textarea
-                            rows="4"
-                            cols="80"
-                            className="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
-                            placeholder="Type a message..."
-                          />
-                        </div>
-                        <div className="text-center mt-6">
-                          <button
-                            className="bg-gray-900 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
-                            type="button"
-                            style={{ transition: 'all .15s ease' }}
-                          >
-                            BOOK NOW
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-
             <section className="relative py-20 text-white bg-black">
               <div className=" px-4">
                 <h2 className="text-5xl font-bold text-center pb-10">
@@ -554,23 +473,84 @@ function App() {
                 </h2>
                 <div className="items-center flex flex-wrap">
                   <div className="w-full md:w-4/12 ml-auto mr-auto px-4 mb-5">
-                    <a
-                      href="https://www.google.com/maps/place/31%C2%B019'57.1%22N+74%C2%B013'56.1%22E/@31.3315909,74.2331606,17z/data=!4m5!3m4!1s0x0:0x0!8m2!3d31.3325348!4d74.2322487?hl=en"
-                      // eslint-disable-next-line
-                    >
-                      <img
-                        alt="..."
-                        className="max-w-full h-auto rounded-lg shadow-lg "
-                        src={place}
-                      />
-                    </a>
+                    <div className="card">
+                      <div className="card-header">
+                        <MapWithAMarker
+                          googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQGUzk8Y0jG08FycmVY4INYEMmE5VC2Ko&v=3.exp&libraries=geometry,drawing,places"
+                          loadingElement={<div style={{ height: `100%` }} />}
+                          containerElement={
+                            <div
+                              style={{ height: `200px`, borderRadius: '10px' }}
+                            />
+                          }
+                          mapElement={<div style={{ height: `100%` }} />}
+                        />
+                      </div>
+                      <div className="card-body">
+                        <h3 className="text-center font-semibold text-2xl">
+                          Site Location
+                        </h3>
+                        <h5 className="p-5 text-xl">
+                          <span>
+                            <i class="fas fa-map-marker"></i>
+                          </span>{' '}
+                          : 5 Minute Drive from Adda Plot Ring Road.
+                        </h5>
+                        <h5 className="px-5 text-xl">
+                          <span>
+                            <i class="fas fa-envelope-square"></i>
+                          </span>{' '}
+                          : dreamhousingscheme@gmail.com
+                        </h5>
+                        <h5 className="px-5 py-4 text-xl">
+                          <span>
+                            <i className="fas fa-phone"></i>
+                          </span>{' '}
+                          : (042) 111 248 248
+                        </h5>
+                      </div>
+                    </div>
                   </div>
                   <div className="w-full md:w-4/12 ml-auto mr-auto px-4 mb-5">
-                    <img
-                      alt="..."
-                      className="max-w-full h-auto rounded-lg shadow-lg "
-                      src={location}
-                    />
+                    <div className="card">
+                      <div className="card-header">
+                        <MainOffices
+                          googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQGUzk8Y0jG08FycmVY4INYEMmE5VC2Ko&v=3.exp&libraries=geometry,drawing,places"
+                          loadingElement={<div style={{ height: `100%` }} />}
+                          containerElement={
+                            <div
+                              style={{ height: `200px`, borderRadius: '10px' }}
+                            />
+                          }
+                          mapElement={<div style={{ height: `100%` }} />}
+                        />
+                      </div>
+                      <div className="card-body p-5">
+                        <h3 className="text-center font-semibold text-2xl">
+                          Main Office
+                        </h3>
+                        <h5 className="p-5 text-xl">
+                          <span>
+                            <i className="fas fa-map-marker"></i>
+                          </span>{' '}
+                          : 42-Commercial, Airline Housing Scheme, Main
+                          Khayaban-e-Jinnah Road, Near Shaukat Khanum
+                          Hospital,Lahore
+                        </h5>
+                        <h5 className="px-5 text-xl">
+                          <span>
+                            <i className="fas fa-envelope-square"></i>
+                          </span>{' '}
+                          : dreamhousingscheme@gmail.com
+                        </h5>
+                        <h5 className="px-5 pt-4 text-xl">
+                          <span>
+                            <i className="fab fa-whatsapp"></i>
+                          </span>{' '}
+                          : 0311-1590111
+                        </h5>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>

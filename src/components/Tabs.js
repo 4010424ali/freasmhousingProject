@@ -12,7 +12,7 @@ const Tabs = ({ color }) => {
             className={
               'text-xs font-bold uppercase px-5 py-3 mb-10 shadow-lg rounded block leading-normal ' +
               (openTab === 1
-                ? 'text-white bg-' + color + '-600'
+                ? 'text-white bg-' + color
                 : 'text-' + color + '-600 bg-white')
             }
             onClick={(e) => {
@@ -23,13 +23,13 @@ const Tabs = ({ color }) => {
             href="#link1"
             role="tablist"
           >
-            COMMUNITY CENTRE
+            Mosque
           </a>
           <a
             className={
               'text-xs font-bold uppercase px-5 py-3 mb-10 shadow-lg rounded block leading-normal ' +
               (openTab === 2
-                ? 'text-white bg-' + color + '-600'
+                ? 'text-white bg-' + color
                 : 'text-' + color + '-600 bg-white')
             }
             onClick={(e) => {
@@ -40,13 +40,13 @@ const Tabs = ({ color }) => {
             href="#link2"
             role="tablist"
           >
-            AMUSEMENT PARKS
+            Gated Community
           </a>
           <a
             className={
               'text-xs font-bold uppercase mb-10 px-5 py-3 shadow-lg rounded block leading-normal ' +
               (openTab === 3
-                ? 'text-white bg-' + color + '-600'
+                ? 'text-white bg-' + color
                 : 'text-' + color + '-600 bg-white')
             }
             onClick={(e) => {
@@ -57,13 +57,13 @@ const Tabs = ({ color }) => {
             href="#link3"
             role="tablist"
           >
-            SPORTS COMPLEX
+            Community Center
           </a>
           <a
             className={
               'text-xs font-bold uppercase mb-10 px-5 py-3 shadow-lg rounded block leading-normal ' +
               (openTab === 4
-                ? 'text-white bg-' + color + '-600'
+                ? 'text-white bg-' + color
                 : 'text-' + color + '-600 bg-white')
             }
             onClick={(e) => {
@@ -74,13 +74,13 @@ const Tabs = ({ color }) => {
             href="#link4"
             role="tablist"
           >
-            SCHOOL
+            Parks
           </a>
           <a
             className={
               'text-xs font-bold uppercase mb-10 px-5 py-3 shadow-lg rounded block leading-normal ' +
               (openTab === 5
-                ? 'text-white bg-' + color + '-600'
+                ? 'text-white bg-' + color
                 : 'text-' + color + '-600 bg-white')
             }
             onClick={(e) => {
@@ -91,7 +91,41 @@ const Tabs = ({ color }) => {
             href="#link4"
             role="tablist"
           >
-            MOSQUE
+            School
+          </a>
+          <a
+            className={
+              'text-xs font-bold uppercase mb-10 px-5 py-3 shadow-lg rounded block leading-normal ' +
+              (openTab === 6
+                ? 'text-white bg-' + color
+                : 'text-' + color + '-600 bg-white')
+            }
+            onClick={(e) => {
+              e.preventDefault();
+              setOpenTab(6);
+            }}
+            data-toggle="tab"
+            href="#link4"
+            role="tablist"
+          >
+            Hospital
+          </a>
+          <a
+            className={
+              'text-xs font-bold uppercase mb-10 px-5 py-3 shadow-lg rounded block leading-normal ' +
+              (openTab === 7
+                ? 'text-white bg-' + color
+                : 'text-' + color + '-600 bg-white')
+            }
+            onClick={(e) => {
+              e.preventDefault();
+              setOpenTab(7);
+            }}
+            data-toggle="tab"
+            href="#link4"
+            role="tablist"
+          >
+            Play Area for kids
           </a>
         </div>
         <div className="grid-img-tabs">

@@ -15,7 +15,10 @@ import UploadImage from './admin/UploadPhoto';
 import UploadDocuments from './admin/UploadDocuments';
 import Download from './components/Download';
 import Contact from './components/Contact';
+import Register from './admin/Register';
+
 import reportWebVitals from './reportWebVitals';
+import UserInfo from './components/UserInfo';
 
 const token = localStorage.token;
 let authenticated = false;
@@ -46,6 +49,7 @@ ReactDOM.render(
         <Route exact path="/downloadPDF" component={Download} />
         <Route exact path="/contact" component={Contact} />
         <Route exact path="/login" component={Login} />
+        <Route exact path="/register" component={Register} />
         <Route
           exact
           path="/dashboard"
@@ -60,6 +64,11 @@ ReactDOM.render(
           exact
           path="/uploadpdf"
           component={authenticated ? UploadDocuments : Login}
+        />
+        <Route
+          exact
+          path="/userInfo"
+          component={authenticated ? UserInfo : Login}
         />
       </Switch>
     </BrowserRouter>

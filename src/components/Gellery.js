@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import Gallery from 'react-grid-gallery';
+import Loader from 'react-loader-spinner';
 import Navbar from './Navbar';
 
 const Gellery = () => {
@@ -19,8 +20,8 @@ const Gellery = () => {
     );
     response.data.data.map((item) => {
       images.push({
-        src: `https://rocky-lowlands-50976.herokuapp.com/uploads/${item.image}`,
-        thumbnail: `https://rocky-lowlands-50976.herokuapp.com/uploads/${item.image}`,
+        src: `${item.image}`,
+        thumbnail: `${item.image}`,
         thumbnailWidth: 320,
         thumbnailHeight: 212,
       });
@@ -36,7 +37,27 @@ const Gellery = () => {
       <Navbar />
       <div className="container mx-auto py-20 px-2 my-8">
         <h2 className="text-5xl font-bold text-center pb-10">Gellery</h2>
-        {loading ? <h1>Loading</h1> : <Gallery images={images} />}
+        {loading ? (
+          <div
+            style={{
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+              textAlign: 'end',
+              height: '100vh',
+            }}
+          >
+            <Loader
+              type="Bars"
+              color="#d1ac6d"
+              height={100}
+              width={100}
+              timeout={3000} //3 secs
+            />
+          </div>
+        ) : (
+          <Gallery images={images} />
+        )}
       </div>
     </div>
   );

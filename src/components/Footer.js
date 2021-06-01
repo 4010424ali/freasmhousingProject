@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 export default function Footer() {
   return (
     <>
-      <footer className="relative bg-gray-300 pt-8 pb-6">
+      <footer className="relative pt-8 pb-6" style={{ background: '#d1ac6d' }}>
         <div
           className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
           style={{ height: '80px', transform: 'translateZ(0)' }}
@@ -19,8 +19,9 @@ export default function Footer() {
             y="0"
           >
             <polygon
-              className="text-gray-300 fill-current"
+              className="fill-current"
               points="2560 0 2560 100 0 100"
+              style={{ background: '#d1ac6d' }}
             ></polygon>
           </svg>
         </div>
@@ -75,17 +76,17 @@ export default function Footer() {
                     <li>
                       <Link
                         className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                        to="#"
+                        to="/register"
                       >
-                        Terms & Conditions
+                        Register
                       </Link>
                     </li>
                     <li>
                       <Link
                         className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                        to="#"
+                        to="/login"
                       >
-                        Privacy Policy
+                        Login
                       </Link>
                     </li>
                     <li>
@@ -118,23 +119,3 @@ export default function Footer() {
     </>
   );
 }
-
-// 31.33286, 74.23226
-// Directions from here
-// Directions to here
-// What's here?
-// Search nearby
-// Print
-// Add a missing place
-// Add your business
-// Report a data problem
-// Measure distance
-// Copied to clipboard
-
-// Al-Ahmad International
-// Kot Araian, Lahore, Punjab, Pakistan
-// 31.332865, 74.232286
-
-// Satellite
-
-// Copied to clipboard

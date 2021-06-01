@@ -14,7 +14,6 @@ const Login = () => {
     e.preventDefault();
 
     if (email.trim() === '' || password.trim() === '') {
-      console.log('Please fill all the fields');
       setMessage('Please fill all the field');
       setShowAlert(true);
     } else {
@@ -31,7 +30,16 @@ const Login = () => {
         axios.defaults.headers.common[
           'Authorization'
         ] = `Bearer ${response.data.token}`;
-        history.push('/dashboard');
+
+        const roleData = await axios.get(
+          'https://rocky-lowlands-50976.herokuapp.com/api/v1/auth/me'
+        );
+
+        if (roleData.data.data.role === 'admin') {
+          history.push('/dashboard');
+        } else {
+          history.push('/userInfo');
+        }
       } catch (err) {
         if (err.response) {
           setMessage(err.response.data.error);
@@ -171,7 +179,7 @@ const Login = () => {
                 <ul className="flex flex-wrap list-none md:justify-end  justify-center">
                   <li>
                     <Link
-                      href="/"
+                      to="/"
                       className="text-white hover:text-gray-400 text-sm font-semibold block py-1 px-3"
                     >
                       Home

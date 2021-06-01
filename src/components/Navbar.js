@@ -231,7 +231,7 @@ export default function Navbar(props) {
                       ' fab fa-youtube text-lg leading-lg '
                     }
                   />
-                  <span className="lg:hidden inline-block ml-2">Tweet</span>
+                  <span className="lg:hidden inline-block ml-2">YouTube</span>
                 </a>
               </li>
             </ul>

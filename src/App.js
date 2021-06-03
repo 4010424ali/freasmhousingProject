@@ -151,7 +151,7 @@ function App() {
                   >
                     <div
                       id="blackOverlay"
-                      className="w-full h-full opacity-50 bg-black"
+                      className="w-full h-full opacity-40 bg-black"
                     >
                       <div className="container w-full lg:w-6/12 px-4 ml-auto mr-auto text-center pt-72">
                         <h1 className="text-white font-semibold text-5xl md:mb-4 sm:mb-0">
@@ -178,7 +178,7 @@ function App() {
                   >
                     <div
                       id="blackOverlay"
-                      className="w-full h-full opacity-50 bg-black"
+                      className="w-full h-full opacity-10 bg-black"
                     ></div>
                   </div>
                 </div>
@@ -191,20 +191,20 @@ function App() {
                   >
                     <div
                       id="blackOverlay"
-                      className="w-full h-full opacity-50 bg-black"
+                      className="w-full h-full opacity-10 bg-black"
                     ></div>
                   </div>
                 </div>
                 <div className="each-slide">
                   <div
                     style={{
-                      background: `url(${slideImages[3]}) no-repeat center center/cover`,
+                      background: `url(${slideImages[0]}) no-repeat center center/cover`,
                       height: '90vh',
                     }}
                   >
                     <div
                       id="blackOverlay"
-                      className="w-full h-full opacity-50 bg-black"
+                      className="w-full h-full opacity-10 bg-black"
                     ></div>
                   </div>
                 </div>

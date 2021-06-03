@@ -153,7 +153,7 @@ function App() {
                       id="blackOverlay"
                       className="w-full h-full opacity-50 bg-black"
                     >
-                      <div className="container w-full lg:w-6/12 px-4 ml-auto mr-auto text-center pt-48">
+                      <div className="container w-full lg:w-6/12 px-4 ml-auto mr-auto text-center pt-72">
                         <h1 className="text-white font-semibold text-5xl md:mb-4 sm:mb-0">
                           Dream Housing Society Private Limited
                         </h1>
@@ -269,16 +269,16 @@ function App() {
                 </h2>
                 <div className="flex flex-wrap items-center">
                   <div className="w-full md:w-5/12 px-4 mr-auto ml-auto ">
-                    <ul className="px-0">
+                    <ul className="px-0 list-decimal">
                       <li
-                        className="border list-none rounded-sm px-3 py-3"
+                        className="border  rounded-sm px-3 py-3"
                         style={{ borderBottomWidth: 0 }}
                       >
                         Completely safe and secure gated community 24/7 manned
                         check post, alert and ever ready foot / mobile patrols.
                       </li>
                       <li
-                        className="border list-none rounded-sm px-3 py-3"
+                        className="border  rounded-sm px-3 py-3"
                         style={{ borderBottomWidth: 0 }}
                       >
                         Complete surveillance of each part of the society
@@ -286,14 +286,14 @@ function App() {
                         control room.
                       </li>
                       <li
-                        className="border list-none rounded-sm px-3 py-3"
+                        className="border rounded-sm px-3 py-3"
                         style={{ borderBottomWidth: 0 }}
                       >
                         Specious roads, lush green parks with beautiful flowers
                         and ever green plantation.
                       </li>
                       <li
-                        className="border list-none rounded-sm px-3 py-3"
+                        className="border  rounded-sm px-3 py-3"
                         style={{ borderBottomWidth: 0 }}
                       >
                         Every utility connection is underground.
@@ -301,9 +301,9 @@ function App() {
                     </ul>
                   </div>
                   <div className="w-full md:w-4/12 px-4 mr-auto">
-                    <ul className="px-0">
+                    <ul className="px-0 list-decimal">
                       <li
-                        className="border list-none rounded-sm px-3 py-3"
+                        className="border rounded-sm px-3 py-3"
                         style={{ borderBottomWidth: 0 }}
                       >
                         Independent Graveyard, Grand Jamia Masjid, high standard
@@ -311,13 +311,13 @@ function App() {
                         distance.
                       </li>
                       <li
-                        className="border list-none rounded-sm px-3 py-3"
+                        className="border  rounded-sm px-3 py-3"
                         style={{ borderBottomWidth: 0 }}
                       >
                         Recreational / Safari Park with jogging tracks.
                       </li>
                       <li
-                        className="border  list-none rounded-sm px-3 py-3"
+                        className="border   rounded-sm px-3 py-3"
                         style={{ borderBottomWidth: 0 }}
                       >
                         Well manage community center for the social gathering of
@@ -332,7 +332,7 @@ function App() {
             <section>
               <div className="antialiased bg-gray-200 text-gray-900 font-sans p-6">
                 <h2 className="text-5xl font-bold text-center pb-10">
-                  Gellery
+                  Gallery
                 </h2>
                 <Carousel
                   responsive={responsive}
@@ -381,127 +381,127 @@ function App() {
                   src={aut_1}
                   style={{ height: '400px', width: '100vw' }}
                   alt=""
-                  className="object-cover p-2"
+                  className="object-fill p-2"
                 />
                 <img
                   src={aut_2}
                   style={{ height: '400px', width: '100vw' }}
                   alt=""
-                  className="object-cover p-2"
+                  className="object-fill p-2"
                 />
                 <img
                   src={aut_3}
                   style={{ height: '400px', width: '100vw' }}
                   alt=""
-                  className="object-cover p-2"
+                  className="object-fill p-2"
                 />
                 <img
                   src={aut_4}
                   style={{ height: '400px', width: '100vw' }}
                   alt=""
-                  className="object-cover p-2"
+                  className="object-fill p-2"
                 />
                 <img
                   src={aut_5}
                   style={{ height: '400px', width: '100vw' }}
                   alt=""
-                  className="object-cover p-2"
+                  className="object-fill p-2"
                 />
                 <img
                   src={aut_6}
                   style={{ height: '400px', width: '100vw' }}
                   alt=""
-                  className="object-cover p-2"
+                  className="object-fill p-2"
                 />
                 <img
                   src={aut_7}
                   style={{ height: '400px', width: '100vw' }}
                   alt=""
-                  className="object-cover p-2"
+                  className="object-fill p-2"
                 />
                 <img
                   src={aut_8}
                   style={{ height: '400px', width: '100vw' }}
                   alt=""
-                  className="object-cover p-2"
+                  className="object-fill p-2"
                 />
                 <img
                   src={aut_9}
                   style={{ height: '400px', width: '100vw' }}
                   alt=""
-                  className="object-cover p-2"
+                  className="object-fill p-2"
                 />
                 <img
                   src={aut_10}
                   style={{ height: '400px', width: '100vw' }}
                   alt=""
-                  className="object-cover p-2"
+                  className="object-fill p-2"
                 />
                 <img
                   src={aut_11}
                   style={{ height: '400px', width: '100vw' }}
                   alt=""
-                  className="object-cover p-2"
+                  className="object-fill p-2"
                 />
                 <img
                   src={aut_12}
                   style={{ height: '400px', width: '100vw' }}
                   alt=""
-                  className="object-cover p-2"
+                  className="object-fill p-2"
                 />
                 <img
                   src={aut_13}
                   style={{ height: '400px', width: '100vw' }}
                   alt=""
-                  className="object-cover p-2"
+                  className="object-fill p-2"
                 />
                 <img
                   src={aut_14}
                   style={{ height: '400px', width: '100vw' }}
                   alt=""
-                  className="object-cover p-2"
+                  className="object-fill p-2"
                 />
                 <img
                   src={aut_15}
                   style={{ height: '400px', width: '100vw' }}
                   alt=""
-                  className="object-cover p-2"
+                  className="object-fill p-2"
                 />
                 <img
                   src={aut_16}
                   style={{ height: '400px', width: '100vw' }}
                   alt=""
-                  className="object-cover p-2"
+                  className="object-fill p-2"
                 />
                 <img
                   src={aut_17}
                   style={{ height: '400px', width: '100vw' }}
                   alt=""
-                  className="object-cover p-2"
+                  className="object-fill p-2"
                 />
                 <img
                   src={aut_18}
                   style={{ height: '400px', width: '100vw' }}
                   alt=""
-                  className="object-cover p-2"
+                  className="object-fill p-2"
                 />
                 <img
                   src={aut_19}
                   style={{ height: '400px', width: '100vw' }}
                   alt=""
-                  className="object-cover p-2"
+                  className="object-fill p-2"
                 />
                 <img
                   src={aut_20}
                   style={{ height: '400px', width: '100vw' }}
                   alt=""
-                  className="object-cover p-2"
+                  className="object-fill p-2"
                 />
                 <img
                   src={aut_21}
                   style={{ height: '400px', width: '100vw' }}
                   alt=""
-                  className="object-cover p-2"
+                  className="object-fill p-2"
                 />
               </Carousel>
             </section>
@@ -536,23 +536,23 @@ function App() {
                           </span>{' '}
                           : 5 Minute Drive from Adda Plot Ring Road.
                         </h5>
-                        <h5 className="px-5 text-xl">
+                        <p className="px-5 text-sm">
                           <span>
                             <i class="fas fa-envelope-square"></i>
                           </span>{' '}
                           : dreamhousingscheme@gmail.com
-                        </h5>
-                        <h5 className="px-5 py-4 text-xl">
+                        </p>
+                        <p className="px-5 py-4 text-sm">
                           <span>
                             <i className="fas fa-phone"></i>
                           </span>{' '}
                           : (042) 111 248 248
-                        </h5>
+                        </p>
                       </div>
                     </div>
                   </div>
                   <div className="w-full md:w-4/12 ml-auto mr-auto px-4 mb-5">
-                    <div className="card">
+                    <div className="card h-full">
                       <div className="card-header">
                         <MainOffices
                           googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQGUzk8Y0jG08FycmVY4INYEMmE5VC2Ko&v=3.exp&libraries=geometry,drawing,places"
@@ -565,7 +565,7 @@ function App() {
                           mapElement={<div style={{ height: `100%` }} />}
                         />
                       </div>
-                      <div className="card-body p-5">
+                      <div className="card-body p-5 ">
                         <h3 className="text-center font-semibold text-2xl">
                           Main Office
                         </h3>
@@ -577,18 +577,18 @@ function App() {
                           Khayaban-e-Jinnah Road, Near Shaukat Khanum
                           Hospital,Lahore
                         </p>
-                        <h5 className="px-5 text-xl">
+                        <p className="px-5 text-sm">
                           <span>
                             <i className="fas fa-envelope-square"></i>
-                          </span>{' '}
+                          </span>
                           : dreamhousingscheme@gmail.com
-                        </h5>
-                        <h5 className="px-5 pt-4 text-lg">
+                        </p>
+                        <p className="px-5 pt-4">
                           <span>
                             <i className="fab fa-whatsapp"></i>
                           </span>{' '}
                           : 0311-1590111
-                        </h5>
+                        </p>
                       </div>
                     </div>
                   </div>

@@ -145,7 +145,7 @@ function App() {
                 <div className="each-slide">
                   <div
                     style={{
-                      background: `url(${slideImages[0]}) no-repeat center center/cover`,
+                      background: `url(${slideImages[3]}) no-repeat center center/cover`,
                       height: '90vh',
                     }}
                   >
@@ -221,19 +221,19 @@ function App() {
                     <h3 className="text-3xl mb-2 font-semibold leading-normal">
                       Dream Housing
                     </h3>
-                    <p className="text-lg font-bold leading-relaxed mt-4 mb-4 text-gray-700">
+                    <p className="text-lg text-justify font-bold leading-relaxed mt-4 mb-4 text-gray-700">
                       Dream Housing (Pvt) Ltd offers a Promising future giving
                       new Dimensions to Real Estate with Luxury Living and
                       Trending Life Style. We suggest most preferred Destination
                       for not only Pakistanis butt also overseas investors.
                     </p>
-                    <p className="text-lg font-bold leading-relaxed mt-0 mb-4 text-gray-700">
+                    <p className="text-lg text-justify font-bold leading-relaxed mt-0 mb-4 text-gray-700">
                       I am greatly thankful to all our esteem clients /
                       investors for trusting us and ensure you our commitment to
                       cater for all socioeconomic classes of the society with
                       equal opportunities.
                     </p>
-                    <p className="text-lg font-bold leading-relaxed mt-0 mb-4 text-gray-700">
+                    <p className="text-lg text-justify font-bold leading-relaxed mt-0 mb-4 text-gray-700">
                       We aim at providing best choice locations with world-class
                       amenities guarantying highest standards, well in time
                       delivery meeting by our promises, thus resulting in life
@@ -250,32 +250,6 @@ function App() {
                         src={aboutus}
                         className="w-full align-middle rounded-t-lg"
                       />
-                      <blockquote className="relative p-8 mb-4">
-                        <svg
-                          preserveAspectRatio="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 583 95"
-                          className="absolute left-0 w-full block"
-                          style={{
-                            height: '95px',
-                            top: '-94px',
-                          }}
-                        >
-                          <polygon
-                            points="-30,95 583,95 583,65"
-                            className="fill-current"
-                            style={{ color: '#d1ac6d' }}
-                          ></polygon>
-                        </svg>
-                        <h4 className="text-xl font-bold text-white">
-                          Top Notch Services
-                        </h4>
-                        <p className="text-md font-light mt-2 text-white">
-                          The Arctic Ocean freezes every winter and much of the
-                          sea-ice then thaws every summer, and that process will
-                          continue whatever happens.
-                        </p>
-                      </blockquote>
                     </div>
                   </div>
                 </div>
@@ -287,6 +261,72 @@ function App() {
                 Our Facilities
               </h2>
               <Tabs color="black" />
+            </section>
+            <section className="pb-20 ">
+              <div className="container mx-auto px-4">
+                <h2 className="text-5xl mt-12 font-bold text-center pb-10">
+                  Our Facilities
+                </h2>
+                <div className="flex flex-wrap items-center">
+                  <div className="w-full md:w-5/12 px-4 mr-auto ml-auto ">
+                    <ul className="px-0">
+                      <li
+                        className="border list-none rounded-sm px-3 py-3"
+                        style={{ borderBottomWidth: 0 }}
+                      >
+                        Completely safe and secure gated community 24/7 manned
+                        check post, alert and ever ready foot / mobile patrols.
+                      </li>
+                      <li
+                        className="border list-none rounded-sm px-3 py-3"
+                        style={{ borderBottomWidth: 0 }}
+                      >
+                        Complete surveillance of each part of the society
+                        through CCTV cameras, all time monitored from a central
+                        control room.
+                      </li>
+                      <li
+                        className="border list-none rounded-sm px-3 py-3"
+                        style={{ borderBottomWidth: 0 }}
+                      >
+                        Specious roads, lush green parks with beautiful flowers
+                        and ever green plantation.
+                      </li>
+                      <li
+                        className="border list-none rounded-sm px-3 py-3"
+                        style={{ borderBottomWidth: 0 }}
+                      >
+                        Every utility connection is underground.
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="w-full md:w-4/12 px-4 mr-auto">
+                    <ul className="px-0">
+                      <li
+                        className="border list-none rounded-sm px-3 py-3"
+                        style={{ borderBottomWidth: 0 }}
+                      >
+                        Independent Graveyard, Grand Jamia Masjid, high standard
+                        school, Medical College and University on walking
+                        distance.
+                      </li>
+                      <li
+                        className="border list-none rounded-sm px-3 py-3"
+                        style={{ borderBottomWidth: 0 }}
+                      >
+                        Recreational / Safari Park with jogging tracks.
+                      </li>
+                      <li
+                        className="border  list-none rounded-sm px-3 py-3"
+                        style={{ borderBottomWidth: 0 }}
+                      >
+                        Well manage community center for the social gathering of
+                        the residents
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </section>
 
             <section>
@@ -309,7 +349,7 @@ function App() {
                       src={`${img.image}`}
                       alt=""
                       className="object-fill p-1"
-                      style={{ height: '600px' }}
+                      style={{ height: '400px' }}
                     />
                   ))}
                 </Carousel>
@@ -339,129 +379,129 @@ function App() {
               >
                 <img
                   src={aut_1}
-                  style={{ height: '500px' }}
+                  style={{ height: '400px', width: '100vw' }}
                   alt=""
-                  className="object-fill p-2"
+                  className="object-cover p-2"
                 />
                 <img
                   src={aut_2}
-                  style={{ height: '500px' }}
+                  style={{ height: '400px', width: '100vw' }}
                   alt=""
-                  className="object-fill p-2"
+                  className="object-cover p-2"
                 />
                 <img
                   src={aut_3}
-                  style={{ height: '500px' }}
+                  style={{ height: '400px', width: '100vw' }}
                   alt=""
-                  className="object-fill p-2"
+                  className="object-cover p-2"
                 />
                 <img
                   src={aut_4}
-                  style={{ height: '500px' }}
+                  style={{ height: '400px', width: '100vw' }}
                   alt=""
-                  className="object-fill p-2"
+                  className="object-cover p-2"
                 />
                 <img
                   src={aut_5}
-                  style={{ height: '500px' }}
+                  style={{ height: '400px', width: '100vw' }}
                   alt=""
-                  className="object-fill p-2"
+                  className="object-cover p-2"
                 />
                 <img
                   src={aut_6}
-                  style={{ height: '500px' }}
+                  style={{ height: '400px', width: '100vw' }}
                   alt=""
-                  className="object-fill p-2"
+                  className="object-cover p-2"
                 />
                 <img
                   src={aut_7}
-                  style={{ height: '500px' }}
+                  style={{ height: '400px', width: '100vw' }}
                   alt=""
-                  className="object-fill p-2"
+                  className="object-cover p-2"
                 />
                 <img
                   src={aut_8}
-                  style={{ height: '500px' }}
+                  style={{ height: '400px', width: '100vw' }}
                   alt=""
-                  className="object-fill p-2"
+                  className="object-cover p-2"
                 />
                 <img
                   src={aut_9}
-                  style={{ height: '500px' }}
+                  style={{ height: '400px', width: '100vw' }}
                   alt=""
-                  className="object-fill p-2"
+                  className="object-cover p-2"
                 />
                 <img
                   src={aut_10}
-                  style={{ height: '500px' }}
+                  style={{ height: '400px', width: '100vw' }}
                   alt=""
-                  className="object-fill p-2"
+                  className="object-cover p-2"
                 />
                 <img
                   src={aut_11}
-                  style={{ height: '500px' }}
+                  style={{ height: '400px', width: '100vw' }}
                   alt=""
-                  className="object-fill p-2"
+                  className="object-cover p-2"
                 />
                 <img
                   src={aut_12}
-                  style={{ height: '500px' }}
+                  style={{ height: '400px', width: '100vw' }}
                   alt=""
-                  className="object-fill p-2"
+                  className="object-cover p-2"
                 />
                 <img
                   src={aut_13}
-                  style={{ height: '500px' }}
+                  style={{ height: '400px', width: '100vw' }}
                   alt=""
-                  className="object-fill p-2"
+                  className="object-cover p-2"
                 />
                 <img
                   src={aut_14}
-                  style={{ height: '500px' }}
+                  style={{ height: '400px', width: '100vw' }}
                   alt=""
-                  className="object-fill p-2"
+                  className="object-cover p-2"
                 />
                 <img
                   src={aut_15}
-                  style={{ height: '500px' }}
+                  style={{ height: '400px', width: '100vw' }}
                   alt=""
-                  className="object-fill p-2"
+                  className="object-cover p-2"
                 />
                 <img
                   src={aut_16}
-                  style={{ height: '500px' }}
+                  style={{ height: '400px', width: '100vw' }}
                   alt=""
-                  className="object-fill p-2"
+                  className="object-cover p-2"
                 />
                 <img
                   src={aut_17}
-                  style={{ height: '500px' }}
+                  style={{ height: '400px', width: '100vw' }}
                   alt=""
-                  className="object-fill p-2"
+                  className="object-cover p-2"
                 />
                 <img
                   src={aut_18}
-                  style={{ height: '500px' }}
+                  style={{ height: '400px', width: '100vw' }}
                   alt=""
-                  className="object-fill p-2"
+                  className="object-cover p-2"
                 />
                 <img
                   src={aut_19}
-                  style={{ height: '500px' }}
+                  style={{ height: '400px', width: '100vw' }}
                   alt=""
-                  className="object-fill p-2"
+                  className="object-cover p-2"
                 />
                 <img
                   src={aut_20}
-                  style={{ height: '500px' }}
+                  style={{ height: '400px', width: '100vw' }}
                   alt=""
-                  className="object-fill p-2"
+                  className="object-cover p-2"
                 />
                 <img
                   src={aut_21}
-                  style={{ height: '500px' }}
+                  style={{ height: '400px', width: '100vw' }}
                   alt=""
-                  className="object-fill p-2"
+                  className="object-cover p-2"
                 />
               </Carousel>
             </section>
@@ -529,21 +569,21 @@ function App() {
                         <h3 className="text-center font-semibold text-2xl">
                           Main Office
                         </h3>
-                        <h5 className="p-5 text-xl">
+                        <p className="p-5 ">
                           <span>
                             <i className="fas fa-map-marker"></i>
                           </span>{' '}
                           : 42-Commercial, Airline Housing Scheme, Main
                           Khayaban-e-Jinnah Road, Near Shaukat Khanum
                           Hospital,Lahore
-                        </h5>
+                        </p>
                         <h5 className="px-5 text-xl">
                           <span>
                             <i className="fas fa-envelope-square"></i>
                           </span>{' '}
                           : dreamhousingscheme@gmail.com
                         </h5>
-                        <h5 className="px-5 pt-4 text-xl">
+                        <h5 className="px-5 pt-4 text-lg">
                           <span>
                             <i className="fab fa-whatsapp"></i>
                           </span>{' '}

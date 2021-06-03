@@ -142,6 +142,16 @@ const Login = () => {
                         Sign In
                       </button>
                     </div>
+                    <div className="text-black text-center mt-6">
+                      Don't have an account?
+                      <Link
+                        className="no-underline border-b border-blue text-blue"
+                        to="/register"
+                      >
+                        Register
+                      </Link>
+                      .
+                    </div>
                   </form>
                 </div>
               </div>

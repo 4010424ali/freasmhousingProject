@@ -6,6 +6,19 @@ export default function Navbar(props) {
   const [navbarOpen, setNavbarOpen] = useState(false);
   return (
     <>
+      <header className="header">
+        <div className="container mx-auto">
+          <div className="header-grid">
+            <p>
+              <i class="fas fa-phone-volume"></i> (042) 111 248 248
+            </p>
+            <p className="hide">
+              <i class="fas fa-envelope-square"></i>{' '}
+              dreamhousingscheme@gmail.com
+            </p>
+          </div>
+        </div>
+      </header>
       <nav
         className={
           (props.transparent
@@ -150,6 +163,27 @@ export default function Navbar(props) {
                     }
                   />{' '}
                   login
+                </Link>
+              </li>
+              <li className="flex items-center">
+                <Link
+                  className={
+                    (props.transparent
+                      ? 'lg:text-white lg:hover:text-gray-300 text-gray-800'
+                      : 'text-gray-800 hover:text-gray-600') +
+                    ' px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold'
+                  }
+                  to="/register"
+                >
+                  <i
+                    className={
+                      (props.transparent
+                        ? 'lg:text-gray-300 text-gray-500'
+                        : 'text-gray-500') +
+                      ' fas fa-user text-lg leading-lg mr-2'
+                    }
+                  />{' '}
+                  Register
                 </Link>
               </li>
             </ul>

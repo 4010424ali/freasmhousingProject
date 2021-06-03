@@ -269,7 +269,7 @@ function App() {
                 </h2>
                 <div className="flex flex-wrap items-center">
                   <div className="w-full md:w-5/12 px-4 mr-auto ml-auto ">
-                    <ul className="px-0 list-decimal">
+                    <ul className="px-0 list-disc">
                       <li
                         className="border  rounded-sm px-3 py-3"
                         style={{ borderBottomWidth: 0 }}
@@ -301,7 +301,7 @@ function App() {
                     </ul>
                   </div>
                   <div className="w-full md:w-4/12 px-4 mr-auto">
-                    <ul className="px-0 list-decimal">
+                    <ul className="px-0 list-disc">
                       <li
                         className="border rounded-sm px-3 py-3"
                         style={{ borderBottomWidth: 0 }}
